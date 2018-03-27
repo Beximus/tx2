@@ -1,0 +1,115 @@
+/* css for Stadttheater style Newtown festival website*/
+body {
+	font-family: sans-serif;
+	text-align: left;
+	margin: 5%;
+	background-color: tomato;
+}
+
+h1 {
+	font-size: 8vw;
+	color: white;
+}
+
+h2{
+	font-size: 3.2vw;
+}
+
+h3{
+	font-size: 4vw;
+}
+
+h4{
+	font-size: 1.5vw;
+}
+
+p{
+	font-size: 1.4vw;
+}
+
+
+.flex-container{
+	display: flex;
+	flex-flow: row wrap;
+	border-bottom: 2px solid black;
+	justify-content: space-between;
+	margin: 2px;
+}
+
+.flex-item{
+	align-items: flex-start;
+	margin: 2%;
+}
+
+.nTitle{
+	width: 15%;
+}
+.nTitle h4{
+	font-size: 2vw;
+}
+
+.nDate{
+	width: 10%;
+}
+.nLoc{
+	width: 10%
+}
+.nCon{
+	width: 30%;
+}
+
+@media(max-width: 1000px){
+	h1{
+		font-size: 6vw;
+	}
+	h2{
+		font-size: 4vw;
+	}
+	p{
+		font-size: 2vw;
+	}
+	.nTitle{
+		order: -1;
+	}
+	.navs{
+		width: 20%;
+	}
+
+}
+
+@media(max-width: 600px){
+	h1{
+		font-size: 4vw;
+	}
+	h2{
+		font-size: 2vw;
+	}
+	p{
+		font-size: 2vw;
+	}
+	.flex-container{
+		margin: 1%;
+	}
+	.flex-item{
+		margin: 1%;
+	}
+	.nTitle{
+		order: -1;
+		width: 35%;
+	}
+	.nDate{
+		width: 35%;
+		order: 1;
+	}
+	.nLoc{
+		width: 35%;
+		order: 0;
+	}
+	.nCon{
+		width: 35%;
+		order: 2;
+	}
+	.navs{
+		width:35%;
+	}
+}
